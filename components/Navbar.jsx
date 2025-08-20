@@ -5,8 +5,8 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between py-2 items-center">
-      <Link href="/">.NextStep</Link>
+    <nav className="flex justify-between py-3 items-center">
+      <Link href="/">NextStep..</Link>
       <div className="flex gap-6">
         {navLinks.map((link, i) => (
           <Link key={i} href={link.href}>
@@ -15,8 +15,10 @@ const Navbar = () => {
         ))}
       </div>
       <div className="space-x-3">
-        <Button>Login</Button>
-        <Button>Sign Up</Button>
+        <Button variant="outline" className="cursor-pointer">
+          Login
+        </Button>
+        <Button className="cursor-pointer">Sign Up</Button>
       </div>
     </nav>
   );
