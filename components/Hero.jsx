@@ -60,6 +60,7 @@ const Hero = () => {
         </div>
       </div>
       <p>Trusted by 100,000+ people</p>
+      <p>Trusted by 100,000+ people</p>
     </div>
   );
 };
