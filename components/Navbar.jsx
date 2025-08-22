@@ -6,7 +6,9 @@ import React from "react";
 const Navbar = () => {
   return (
     <nav className="flex justify-between py-3 items-center">
-      <Link href="/">NextStep..</Link>
+      <Link className="font-black" href="/">
+        NextStep..
+      </Link>
       <div className="flex gap-6">
         {navLinks.map((link, i) => (
           <Link key={i} href={link.href}>

@@ -4,7 +4,7 @@ import JobSearchBar from "./JobSearchBar";
 
 const Hero = () => {
   return (
-    <div className="w-full min-h-screen  overflow-hidden  my-24 flex flex-col items-center justify-center gap-7">
+    <section className="w-full min-h-screen  overflow-hidden  my-24 flex flex-col items-center justify-center gap-7">
       <h1 className="text-5xl font-bold text-center">
         Your Next Job Is <br /> Just <span>One Click</span> Away
       </h1>
@@ -42,7 +42,7 @@ const Hero = () => {
 
       <AvatarGroup />
       <FeaturedJobs />
-    </div>
+    </section>
   );
 };
 
