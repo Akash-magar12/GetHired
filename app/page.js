@@ -1,11 +1,11 @@
-import FeaturedJobs from "@/components/FeaturedJobs";
+import ExploreCareers from "@/components/ExploreCareers";
 import Hero from "@/components/Hero";
 
 const Home = () => {
   return (
-    <main className="">
+    <main className="w-full  min-h-screen">
       <Hero />
-      {/* <FeaturedJobs /> */}
+      <ExploreCareers />
     </main>
   );
 };

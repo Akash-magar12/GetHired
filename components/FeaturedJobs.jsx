@@ -1,90 +1,186 @@
 "use client";
 
-import { MapPin } from "lucide-react";
-import Image from "next/image";
+import { MapPin, Search } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Separator } from "@/components/ui/separator";
 
 const FeaturedJobs = () => {
   return (
-    <section className="w-full py-20 px-6 flex flex-col items-center">
-      {/* Heading */}
-      <p className="text-gray-600 text-sm mb-10">
-        Trusted by <span className="font-semibold">100,000+ People</span>
-      </p>
-
-      {/* Cards Wrapper */}
-      <div className="relative flex items-center justify-center gap-6 max-w-6xl">
-        {/* Left card (tilted) */}
-        <div className="hidden md:block rotate-[-8deg] scale-90 opacity-80">
-          <div className="bg-white shadow-lg rounded-2xl p-6 w-72">
-            <h3 className="font-semibold text-sm mb-3">
-              Highest-Paying Sectors
-            </h3>
-            <ul className="space-y-2 text-sm">
-              <li className="flex justify-between">
-                <span>UI/UX Designer</span> <span>$6,500/Month</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Data Scientist</span> <span>$7,200/Month</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        {/* Main card */}
-        <div className="bg-white shadow-xl rounded-2xl p-6 w-80 border">
-          <div className="flex items-center gap-2 mb-3">
-            <Image
-              src="/microsoft.png" // place company logo in /public
-              alt="Microsoft Logo"
-              width={24}
-              height={24}
-            />
-            <h2 className="font-semibold">Microsoft</h2>
-            <span className="flex items-center text-sm text-gray-500 ml-auto">
-              <MapPin className="w-4 h-4 mr-1" /> WA, USA
-            </span>
-          </div>
-
-          <h3 className="font-bold text-lg mb-2">Product Manager</h3>
-          <span className="bg-gray-100 text-xs px-2 py-1 rounded-full">
-            Full Time
-          </span>
-
-          <div className="mt-3 text-sm text-gray-600 space-y-1">
-            <p>📌 Permanent</p>
-            <p>💰 $6,500 – $10,000 / Month</p>
-          </div>
-
-          <p className="text-gray-500 text-sm mt-3 leading-relaxed">
-            Work with teams to build and launch Microsoft 365 features. Hybrid
-            work available.
-          </p>
-        </div>
-
-        {/* Right card (tilted) */}
-        <div className="hidden md:block rotate-[8deg] scale-90 opacity-80">
-          <div className="bg-white shadow-lg rounded-2xl p-6 w-72">
-            <h3 className="font-semibold text-sm mb-3">
-              Top Companies Hiring Now
-            </h3>
-            <ul className="space-y-2 text-sm">
-              <li className="flex justify-between">
-                <span>Google</span> <span>Software Engineer</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Airbnb</span> <span>Product Designer</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Meta</span> <span>Data Analyst</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Dropbox</span> <span>Frontend Dev</span>
-              </li>
-            </ul>
-          </div>
-        </div>
+    <div className="relative flex items-center justify-center ">
+      {/* Extra Left card (Card A) */}
+      <div className="hidden lg:block transform -rotate-12 translate-x-40 translate-y-26">
+        <Card className="w-72 shadow-md rounded-xl">
+          <CardHeader>
+            <CardTitle className="text-lg font-semibold text-gray-800">
+              Trending Roles
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-3 text-sm">
+            <div className="flex justify-between">
+              <span className="text-gray-700">AI Engineer</span>
+              <span className="font-medium text-gray-900">$8,500/Month</span>
+            </div>
+            <div className="flex justify-between">
+              <span className="text-gray-700">Cloud Architect</span>
+              <span className="font-medium text-gray-900">$9,000/Month</span>
+            </div>
+          </CardContent>
+        </Card>
       </div>
-    </section>
+
+      {/* Left card (Card 1) */}
+      <div className="hidden lg:block transform -rotate-10 translate-x-4 translate-y-16">
+        <Card className="w-80 shadow-md rounded-xl">
+          <CardHeader>
+            <CardTitle className="text-lg font-semibold text-gray-800">
+              Highest-Paying Sectors
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="h-24 mb-6 relative bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-4 flex items-end">
+              <svg className="w-full h-full" viewBox="0 0 200 60">
+                <path
+                  d="M 10 50 Q 50 30, 100 35 T 190 15"
+                  stroke="#3B82F6"
+                  strokeWidth="2"
+                  fill="none"
+                />
+                <circle cx="10" cy="50" r="3" fill="#3B82F6" />
+                <circle cx="100" cy="35" r="3" fill="#3B82F6" />
+                <circle cx="190" cy="15" r="3" fill="#3B82F6" />
+              </svg>
+            </div>
+
+            <div className="space-y-3 text-sm">
+              <div className="flex justify-between">
+                <span className="text-gray-700">UI/UX Designer</span>
+                <span className="font-medium text-gray-900">$6,500/Month</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-gray-700">Data Scientist</span>
+                <span className="font-medium text-gray-900">$7,200/Month</span>
+              </div>
+            </div>
+
+            <Separator className="my-4" />
+
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center">
+                <span className="text-white text-xs font-bold">PC</span>
+              </div>
+              <div>
+                <p className="text-xs text-gray-600">PixelCraft</p>
+                <p className="text-xs text-green-600">
+                  +32% job listing this month
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Main card (Card 2) */}
+      <Card className="w-82 shadow-md rounded-xl relative z-20 translate-y-6">
+        <CardHeader className="flex flex-row items-center justify-between">
+          <div className="flex items-center gap-2">
+            <div className="w-10 h-10 flex flex-wrap">
+              <div className="w-4 h-4 bg-red-500 mr-1 mb-1"></div>
+              <div className="w-4 h-4 bg-green-500 mb-1"></div>
+              <div className="w-4 h-4 bg-blue-500 mr-1"></div>
+              <div className="w-4 h-4 bg-yellow-400"></div>
+            </div>
+            <CardTitle className="text-xl font-semibold">Microsoft</CardTitle>
+          </div>
+          <div className="flex items-center text-sm text-gray-500">
+            <MapPin className="w-4 h-4 mr-1" />
+            WA, USA
+          </div>
+        </CardHeader>
+        <CardContent>
+          <h3 className="font-bold text-2xl mb-3 text-gray-900">
+            Product Manager
+          </h3>
+          <Badge variant="secondary" className="mb-4">
+            Full Time
+          </Badge>
+          <div className="space-y-2 mb-6 text-sm text-gray-600">
+            <div className="flex items-center">
+              <span className="mr-2">📌</span>
+              <span>Permanent</span>
+            </div>
+            <div className="flex items-center">
+              <span className="mr-2">💰</span>
+              <span>$6,500-10,000/Month</span>
+            </div>
+          </div>
+          <p className="text-gray-600 text-sm leading-relaxed">
+            Work With Teams To Build And Launch Microsoft 365 Features. Hybrid
+            Work Available.
+          </p>
+        </CardContent>
+      </Card>
+
+      {/* Right card (Card 3) */}
+      <div className="hidden lg:block transform rotate-10 -translate-x-4 translate-y-16">
+        <Card className="w-80 shadow-md rounded-xl">
+          <CardHeader className="flex flex-row items-center gap-2">
+            <Search className="w-5 h-5 text-gray-600" />
+            <CardTitle className="text-lg font-semibold text-gray-800">
+              Top Companies Hiring Now
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-4 text-sm">
+              <div className="flex justify-between">
+                <span className="font-medium text-gray-700">Google</span>
+                <span className="text-gray-500">Software Engineer</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="font-medium text-gray-700">Airbnb</span>
+                <span className="text-gray-500">Product Designer</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="font-medium text-gray-700">Meta</span>
+                <span className="text-gray-500">Data Analyst</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="font-medium text-gray-700">Dropbox</span>
+                <span className="text-gray-500">Front-End Dev</span>
+              </div>
+            </div>
+            <Separator className="my-4" />
+            <div className="bg-blue-50 text-blue-700 px-3 py-2 rounded-full text-center text-xs">
+              <span className="font-medium">Ronald Richards</span>
+              <br />
+              Jr. Front-End Developer
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Extra Right card (Card B) */}
+      <div className="hidden lg:block transform rotate-12 -translate-x-40 -z-10 translate-y-26">
+        <Card className="w-72 shadow-md rounded-xl">
+          <CardHeader>
+            <CardTitle className="text-lg font-semibold text-gray-800">
+              Remote-Friendly
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-3 text-sm">
+            <div className="flex justify-between">
+              <span className="text-gray-700">Notion</span>
+              <span className="text-gray-500">UX Writer</span>
+            </div>
+            <div className="flex justify-between">
+              <span className="text-gray-700">Figma</span>
+              <span className="text-gray-500">Design Engineer</span>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
   );
 };
+
 export default FeaturedJobs;
