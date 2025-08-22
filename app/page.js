@@ -1,4 +1,6 @@
+import ContactSection from "@/components/ContactSection";
 import ExploreCareers from "@/components/ExploreCareers";
+import FAQSection from "@/components/FAQSection";
 import Hero from "@/components/Hero";
 import OpportunitiesSection from "@/components/OpportunitiesSection";
 import PopularJobs from "@/components/PopularJobs";
@@ -14,6 +16,8 @@ const Home = () => {
       <PopularJobs />
       <UserTestimonials />
       <OpportunitiesSection />
+      <FAQSection />
+      <ContactSection />
     </main>
   );
 };

@@ -2,7 +2,15 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { MapPin, Users, Briefcase, CheckCircle2 } from "lucide-react";
+import {
+  MapPin,
+  Users,
+  Briefcase,
+  CheckCircle2,
+  BriefcaseBusiness,
+  Rocket,
+  Earth,
+} from "lucide-react";
 
 const OpportunitiesSection = () => {
   return (
@@ -52,7 +60,7 @@ const OpportunitiesSection = () => {
           </Card>
 
           {/* Small floating card */}
-          <div className="absolute -bottom-6 right-6 bg-white text-gray-900 rounded-xl shadow-lg p-4 flex items-center gap-4 w-64">
+          <div className="absolute -bottom-6 right-6 bg-white text-gray-900 rounded-xl shadow-2xl p-4 flex items-center gap-4 w-64">
             <div>
               <h4 className="font-medium">Video Stream Project</h4>
               <div className="flex items-center gap-2 mt-2">
@@ -78,7 +86,7 @@ const OpportunitiesSection = () => {
 
         {/* Right: Text */}
         <div className="space-y-6">
-          <h2 className="text-3xl sm:text-4xl lg:text-[2.8rem] font-bold leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-[2.8rem] text-center  sm:text-left whitespace-nowrap font-bold leading-tight">
             Next-Level Opportunities, <br />
             <span className="bg-gradient-to-r from-[#338CFF] via-[#DAA0F2] to-[#FF9540] bg-clip-text text-transparent">
               All In One Place
@@ -87,20 +95,23 @@ const OpportunitiesSection = () => {
 
           <ul className="space-y-4 text-gray-300">
             <li className="flex items-start gap-3">
-              <Users className="w-5 h-5 text-indigo-400 mt-0.5" />
+              <Rocket />
               Build your profile to showcase real skills, not just job titles
             </li>
             <li className="flex items-start gap-3">
-              <Briefcase className="w-5 h-5 text-indigo-400 mt-0.5" />
+              <BriefcaseBusiness />
               Discover high-quality opportunities that match your potential
             </li>
             <li className="flex items-start gap-3">
-              <CheckCircle2 className="w-5 h-5 text-indigo-400 mt-0.5" />
+              <Earth />
               Connect with trusted employers who are hiring globally
             </li>
           </ul>
 
-          <Button className="bg-indigo-600 hover:bg-indigo-700 rounded-full px-6 py-3 text-lg font-semibold">
+          <Button
+            className="bg-white py-4 text-black cursor-pointer"
+            variant="outline"
+          >
             Start Exploring Now
           </Button>
         </div>
