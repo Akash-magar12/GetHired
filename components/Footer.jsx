@@ -3,7 +3,7 @@ import { Facebook, Github, Instagram, Youtube } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="border-t bg-white">
-      <div className="container mx-auto px-6 py-12 flex justify-between gap-10">
+      <div className="container mx-auto  py-12 flex justify-between gap-10">
         {/* Left Section */}
         <div>
           <h2 className="text-xl font-bold mb-6">NextStep.</h2>

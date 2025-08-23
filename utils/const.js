@@ -1,3 +1,16 @@
+import {
+  Megaphone,
+  Palette,
+  Users,
+  DollarSign,
+  Heart,
+  Shield,
+  Briefcase,
+  GraduationCap,
+  Headphones,
+  FolderOpen,
+} from "lucide-react";
+
 export const navLinks = [
   { name: "Home", href: "/" },
   { name: "Jobs", href: "/jobs" },
@@ -80,5 +93,67 @@ export const jobs = [
     description:
       "Monitor Network Activity, Detect Threats, And Respond To Incidents In Real Time. Experience With Firewalls And SIEM Tools Required.",
     postedAgo: "2 days ago",
+  },
+];
+export const jobCategories = [
+  {
+    title: "Marketing & Communication",
+    jobs: 68,
+    icon: Megaphone,
+    color: "bg-blue-500",
+  },
+  {
+    title: "Design & Development",
+    jobs: 98,
+    icon: Palette,
+    color: "bg-orange-500",
+  },
+  {
+    title: "Human Research & Development",
+    jobs: 51,
+    icon: Users,
+    color: "bg-purple-500",
+  },
+  {
+    title: "Finance Management",
+    jobs: 45,
+    icon: DollarSign,
+    color: "bg-green-500",
+  },
+  {
+    title: "Healthcare & Medical",
+    jobs: 43,
+    icon: Heart,
+    color: "bg-emerald-500",
+  },
+  {
+    title: "Armforce Guide & Security",
+    jobs: 44,
+    icon: Shield,
+    color: "bg-blue-600",
+  },
+  {
+    title: "Business & Consulting",
+    jobs: 29,
+    icon: Briefcase,
+    color: "bg-pink-500",
+  },
+  {
+    title: "Education & Training",
+    jobs: 58,
+    icon: GraduationCap,
+    color: "bg-violet-500",
+  },
+  {
+    title: "Customer Support Care",
+    jobs: 65,
+    icon: Headphones,
+    color: "bg-indigo-500",
+  },
+  {
+    title: "Project Management",
+    jobs: 53,
+    icon: FolderOpen,
+    color: "bg-amber-500",
   },
 ];
