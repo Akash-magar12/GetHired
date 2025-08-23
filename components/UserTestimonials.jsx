@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const UserTestimonials = () => {
   return (
-    <section className="relative  py-10 ">
+    <section className="relative py-8 sm:py-10 md:py-12 px-4 sm:px-6 md:px-8">
       {/* Decorative background lines */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-5 sm:opacity-10">
         <svg className="w-full h-full" viewBox="0 0 1200 600" fill="none">
           <path
             d="M800 50 Q1000 100 1200 80"
@@ -26,45 +26,49 @@ const UserTestimonials = () => {
         </svg>
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-16">
+      <div className="relative z-10 max-w-xs sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto text-center">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-8 sm:mb-12 md:mb-16">
           What Our Users Say
         </h2>
 
-        <div className="relative mb-12">
+        <div className="relative mb-8 sm:mb-10 md:mb-12">
           {/* Large quotation marks */}
-          <div className="text-6xl text-blue-500 font-serif absolute -top-4 -left-4 opacity-50">
+          <div className="text-4xl sm:text-5xl md:text-6xl text-blue-500 font-serif absolute -top-2 sm:-top-3 md:-top-4 -left-2 sm:-left-3 md:-left-4 opacity-50">
             "
           </div>
-          <div className="text-6xl text-blue-500 font-serif absolute -bottom-8 -right-4 opacity-50">
+          <div className="text-4xl sm:text-5xl md:text-6xl text-blue-500 font-serif absolute -bottom-4 sm:-bottom-6 md:-bottom-8 -right-2 sm:-right-3 md:-right-4 opacity-50">
             "
           </div>
 
-          <blockquote className="text-xl md:text-2xl text-gray-700 leading-relaxed mb-8 px-8">
+          <blockquote className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 leading-relaxed mb-6 sm:mb-8 px-4 sm:px-6 md:px-8">
             I used to struggle with job platforms, but JobNest makes it feel
             easy and personal. It actually understands what I'm looking for.
           </blockquote>
 
           {/* Dotted line separator */}
-          <div className="flex items-center justify-center mb-6">
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-              <div className="w-20 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
-              <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-              <div className="w-20 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
-              <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+          <div className="flex items-center justify-center mb-4 sm:mb-6">
+            <div className="flex items-center gap-1 sm:gap-2">
+              <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-blue-400 rounded-full"></div>
+              <div className="w-12 sm:w-16 md:w-20 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+              <div className="w-2 h-2 sm:w-3 sm:h-3 bg-blue-500 rounded-full"></div>
+              <div className="w-12 sm:w-16 md:w-20 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+              <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-blue-400 rounded-full"></div>
             </div>
           </div>
 
           <div className="text-center">
-            <p className="font-semibold text-gray-900 text-lg">Esther Howard</p>
-            <p className="text-gray-600">Marketing Coordinator</p>
+            <p className="font-semibold text-gray-900 text-base sm:text-lg">
+              Esther Howard
+            </p>
+            <p className="text-gray-600 text-sm sm:text-base">
+              Marketing Coordinator
+            </p>
           </div>
         </div>
 
         {/* User avatars */}
-        <div className="flex justify-center items-center gap-4">
-          <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-white shadow-lg">
+        <div className="flex justify-center items-center gap-2 sm:gap-3 md:gap-4 overflow-x-auto pb-2">
+          <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full overflow-hidden border-2 border-white shadow-lg flex-shrink-0">
             <Image
               src="https://images.unsplash.com/photo-1602481182506-6e15d0d2e44b?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="User testimonial"
@@ -73,7 +77,7 @@ const UserTestimonials = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-white shadow-lg">
+          <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full overflow-hidden border-2 border-white shadow-lg flex-shrink-0">
             <Image
               src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="User testimonial"
@@ -82,7 +86,7 @@ const UserTestimonials = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-blue-200 shadow-xl">
+          <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-full overflow-hidden border-2 sm:border-3 md:border-4 border-blue-200 shadow-xl flex-shrink-0">
             <Image
               src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Featured user testimonial"
@@ -91,7 +95,7 @@ const UserTestimonials = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-white shadow-lg">
+          <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full overflow-hidden border-2 border-white shadow-lg flex-shrink-0">
             <Image
               src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="User testimonial"
@@ -100,7 +104,7 @@ const UserTestimonials = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-white shadow-lg">
+          <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full overflow-hidden border-2 border-white shadow-lg flex-shrink-0">
             <Image
               src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="User testimonial"
@@ -111,9 +115,10 @@ const UserTestimonials = () => {
           </div>
         </div>
       </div>
-      <div className="relative py-20  ">
-        <div className="relative z-10 mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
+
+      <div className="relative py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8">
+        <div className="relative z-10 max-w-xs sm:max-w-2xl md:max-w-4xl lg:max-w-6xl mx-auto text-center">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight text-gray-900">
             <span
               className="bg-clip-text text-transparent"
               style={{
