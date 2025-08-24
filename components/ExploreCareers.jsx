@@ -8,7 +8,7 @@ const ExploreCareers = () => {
   return (
     <section className="w-full min-h-[80vh] sm:min-h-[90vh] lg:min-h-screen px-4 sm:px-6 md:px-8">
       <SectionHeader
-        title="Explore Careers Across Every Field"
+        title="Find Jobs That Match You"
         description="Discover a wide range of careers across every industry — from design and tech to healthcare and finance. Find roles that match your skills and passion, and take the next step toward your dream job."
       />
       <div className="w-full max-w-7xl mx-auto">

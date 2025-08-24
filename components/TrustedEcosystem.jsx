@@ -16,14 +16,15 @@ const TrustedEcosystem = () => {
       <div className="max-w-xs sm:max-w-2xl md:max-w-4xl lg:max-w-6xl w-full text-center rounded-2xl py-8 sm:py-12 md:py-16 px-4 sm:px-6">
         {/* Heading */}
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-8 sm:mb-10 md:mb-12">
-          We've Built A Trusted Ecosystem That Supports{" "}
+          Powering Careers By Connecting{" "}
           <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-            Thousands Of Job Seekers
+            Job Seekers
           </span>{" "}
+          With{" "}
           <span className="bg-gradient-to-r from-pink-400 via-orange-400 to-yellow-400 bg-clip-text text-transparent">
-            And Recruiters
+            Employers
           </span>{" "}
-          Around The Globe — Fast, Reliable, And Results-Driven.
+          Worldwide — Smarter Matches, Faster Hiring.
         </h1>
 
         {/* Stats */}
@@ -50,7 +51,7 @@ const TrustedEcosystem = () => {
           className="cursor-pointer w-full sm:w-auto px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base"
           size="lg"
         >
-          Join Us Today
+          Upload Your Resume
         </Button>
       </div>
     </section>

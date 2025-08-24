@@ -9,7 +9,7 @@ const Hero = () => {
         Your Next Job Is <br /> Just <span>One Click</span> Away
       </h1>
       <p className="text-center text-sm sm:text-base md:text-lg max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl">
-        Find opportunities that match your passion, not just your resume.{" "}
+        Discover jobs that value your passion as much as your resume.{" "}
         <br className="hidden sm:block" />
         Let's build the career you deserve — starting today.
       </p>
