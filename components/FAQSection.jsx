@@ -19,7 +19,7 @@ const FAQSection = () => {
         >
           <AccordionItem
             value="item-1"
-            className="border border-gray-200 rounded-lg sm:rounded-xl px-4 sm:px-6 md:px-8"
+            className="border border-gray-200 rounded-xl px-4 sm:px-6 md:px-8"
           >
             <AccordionTrigger className="text-left text-sm sm:text-base md:text-lg  font-medium py-4 sm:py-5 md:py-6 hover:no-underline [&[data-state=open]>svg]:rotate-180 transition-all">
               How do I apply for a job on JobNest?
@@ -40,7 +40,7 @@ const FAQSection = () => {
 
           <AccordionItem
             value="item-2"
-            className="border border-gray-200 rounded-lg sm:rounded-xl px-4 sm:px-6 md:px-8"
+            className="border border-gray-200 rounded-xl px-4 sm:px-6 md:px-8"
           >
             <AccordionTrigger className="text-left text-sm sm:text-base md:text-lg  font-medium py-4 sm:py-5 md:py-6 hover:no-underline [&[data-state=open]>svg]:rotate-180 transition-all">
               What is NextStep?
@@ -57,7 +57,7 @@ const FAQSection = () => {
 
           <AccordionItem
             value="item-3"
-            className="border border-gray-200 rounded-lg sm:rounded-xl px-4 sm:px-6 md:px-8"
+            className="border border-gray-200 rounded-xl px-4 sm:px-6 md:px-8"
           >
             <AccordionTrigger className="text-left text-sm sm:text-base md:text-lg  font-medium py-4 sm:py-5 md:py-6 hover:no-underline [&[data-state=open]>svg]:rotate-180 transition-all">
               How can I get better job matches?
@@ -77,7 +77,7 @@ const FAQSection = () => {
 
           <AccordionItem
             value="item-4"
-            className="border border-gray-200 rounded-lg sm:rounded-xl px-4 sm:px-6 md:px-8"
+            className="border border-gray-200 rounded-xl px-4 sm:px-6 md:px-8"
           >
             <AccordionTrigger className="text-left text-sm sm:text-base md:text-lg  font-medium py-4 sm:py-5 md:py-6 hover:no-underline [&[data-state=open]>svg]:rotate-180 transition-all">
               How often are new jobs posted?
@@ -93,7 +93,7 @@ const FAQSection = () => {
 
           <AccordionItem
             value="item-5"
-            className="border border-gray-200 rounded-lg sm:rounded-xl px-4 sm:px-6 md:px-8"
+            className="border border-gray-200 rounded-xl px-4 sm:px-6 md:px-8"
           >
             <AccordionTrigger className="text-left text-sm sm:text-base md:text-lg  font-medium py-4 sm:py-5 md:py-6 hover:no-underline [&[data-state=open]>svg]:rotate-180 transition-all">
               Can I save job listings for later?

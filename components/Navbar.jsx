@@ -22,7 +22,7 @@ const Navbar = () => {
           className="font-black text-xl sm:text-2xl hover:opacity-80 transition-opacity"
           href="/"
         >
-          NextStep..
+          GetHired.
         </Link>
 
         {/* Desktop Nav Links */}

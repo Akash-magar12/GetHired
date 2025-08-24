@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row lg:justify-between gap-8 lg:gap-10">
           {/* Left Section */}
           <div className="flex-1 max-w-md">
-            <h2 className="text-xl font-bold mb-4 sm:mb-6">NextStep.</h2>
+            <h2 className="text-xl font-bold mb-4 sm:mb-6">GetHired.</h2>
             <h3 className="text-xl sm:text-2xl font-semibold mb-3 leading-tight">
               Stay Connected <br /> With NextStep
             </h3>

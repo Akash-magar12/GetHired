@@ -171,8 +171,8 @@ const Contact = () => {
                     How do I create an account?
                   </h4>
                   <p className="text-gray-600 text-sm">
-                    Click the "Sign Up" button and follow the registration
-                    process. You'll need to upload your resume to get started.
+                    Click the &quot;Sign Up&quot; button and follow the registration
+                    process. You&apos;ll need to upload your resume to get started.
                   </p>
                 </div>
 
