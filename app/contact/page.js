@@ -6,7 +6,7 @@ import { Mail, Phone, MapPin, Clock } from "lucide-react";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+    <div className="min-h-screen e">
       <div className="max-w-7xl mx-auto px-4 py-12">
         {/* Header Section */}
         <div className="text-center mb-12">
@@ -15,7 +15,7 @@ const Contact = () => {
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Have questions about our platform? Need help with your job search?
-            We're here to help you succeed in your career journey.
+            We&apos;re here to help you succeed in your career journey.
           </p>
         </div>
 
@@ -27,7 +27,7 @@ const Contact = () => {
                 Send us a Message
               </CardTitle>
               <p className="text-gray-600">
-                Fill out the form below and we'll get back to you within 24
+                Fill out the form below and we&apos;ll get back to you within 24
                 hours.
               </p>
             </CardHeader>
