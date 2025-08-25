@@ -75,9 +75,9 @@ export default function Footer() {
                 Our address
               </h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>+84 965 657 893</li>
-                <li>contact@capiproduct.com</li>
-                <li>35 To Vinh Dien str, Thanh Xuan, Hanoi, Vietnam</li>
+                <li>+91 900000000</li>
+                <li>contact@abc.com</li>
+                <li>Garhi Cantt,Dehradun</li>
               </ul>
             </div>
           </div>
@@ -86,7 +86,7 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t py-4 sm:py-6 text-center text-xs text-muted-foreground px-4">
-        Copyrights 2025 JobNest. All rights reserved.
+        Copyrights 2025 GetHired. All rights reserved.
       </div>
     </footer>
   );

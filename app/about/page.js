@@ -10,7 +10,7 @@ const About = () => {
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">About JobMatch</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            We're revolutionizing the way job seekers connect with their dream careers. Our AI-powered platform matches
+            We&apos;re revolutionizing the way job seekers connect with their dream careers. Our AI-powered platform matches
             your skills and experience with the perfect opportunities.
           </p>
         </div>
@@ -22,7 +22,7 @@ const About = () => {
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">Our Mission</h2>
               <p className="text-gray-600 leading-relaxed mb-6">
                 To bridge the gap between talented professionals and innovative companies. We believe everyone deserves
-                to find work that's not just a job, but a calling.
+                to find work that&apos;s not just a job, but a calling.
               </p>
               <div className="flex flex-wrap gap-2">
                 <Badge variant="secondary">AI-Powered Matching</Badge>

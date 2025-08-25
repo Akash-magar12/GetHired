@@ -1,31 +1,21 @@
+"use client";
+
+import { testimonials } from "@/utils/const";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const UserTestimonials = () => {
+  const [active, setActive] = useState(0);
+  const current = testimonials[active];
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActive((prev) => (prev + 1) % testimonials.length);
+    }, 4000);
+
+    return () => clearInterval(interval); // cleanup
+  }, []);
   return (
     <section className="relative py-8 sm:py-10 md:py-12 px-4 sm:px-6 md:px-8">
-      {/* Decorative background lines */}
-      <div className="absolute inset-0 opacity-5 sm:opacity-10">
-        <svg className="w-full h-full" viewBox="0 0 1200 600" fill="none">
-          <path
-            d="M800 50 Q1000 100 1200 80"
-            stroke="#f472b6"
-            strokeWidth="2"
-            fill="none"
-          />
-          <path
-            d="M850 120 Q1050 170 1200 150"
-            stroke="#fbbf24"
-            strokeWidth="2"
-            fill="none"
-          />
-          <g stroke="#60a5fa" strokeWidth="1" opacity="0.5">
-            <line x1="900" y1="0" x2="1200" y2="300" />
-            <line x1="950" y1="50" x2="1200" y2="350" />
-            <line x1="1000" y1="100" x2="1200" y2="400" />
-          </g>
-        </svg>
-      </div>
-
       <div className="relative z-10 max-w-xs sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto text-center">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-8 sm:mb-12 md:mb-16">
           What Our Users Say
@@ -41,8 +31,7 @@ const UserTestimonials = () => {
           </div>
 
           <blockquote className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 leading-relaxed mb-6 sm:mb-8 px-4 sm:px-6 md:px-8">
-            I used to struggle with job platforms, but JobNest makes it feel
-            easy and personal. It actually understands what I'm looking for.
+            {current.quote}
           </blockquote>
 
           {/* Dotted line separator */}
@@ -58,61 +47,29 @@ const UserTestimonials = () => {
 
           <div className="text-center">
             <p className="font-semibold text-gray-900 text-base sm:text-lg">
-              Esther Howard
+              {current.name}
             </p>
-            <p className="text-gray-600 text-sm sm:text-base">
-              Marketing Coordinator
-            </p>
+            <p className="text-gray-600 text-sm sm:text-base">{current.role}</p>
           </div>
         </div>
 
         {/* User avatars */}
         <div className="flex justify-center items-center gap-2 sm:gap-3 md:gap-4 overflow-x-auto pb-2">
-          <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full overflow-hidden border-2 border-white shadow-lg flex-shrink-0">
-            <Image
-              src="https://images.unsplash.com/photo-1602481182506-6e15d0d2e44b?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="User testimonial"
-              width={64}
-              height={64}
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full overflow-hidden border-2 border-white shadow-lg flex-shrink-0">
-            <Image
-              src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="User testimonial"
-              width={64}
-              height={64}
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-full overflow-hidden border-2 sm:border-3 md:border-4 border-blue-200 shadow-xl flex-shrink-0">
-            <Image
-              src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Featured user testimonial"
-              width={80}
-              height={80}
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full overflow-hidden border-2 border-white shadow-lg flex-shrink-0">
-            <Image
-              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="User testimonial"
-              width={64}
-              height={64}
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full overflow-hidden border-2 border-white shadow-lg flex-shrink-0">
-            <Image
-              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="User testimonial"
-              width={64}
-              height={64}
-              className="w-full h-full object-cover"
-            />
-          </div>
+          {testimonials.map((test, idx) => (
+            <div
+              key={test.id}
+              className="w-12 cursor-pointer h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full overflow-hidden border-2 border-white shadow-lg flex-shrink-0"
+            >
+              <Image
+                onClick={() => setActive(idx)}
+                src={test.avatar}
+                alt="User testimonial"
+                width={64}
+                height={64}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          ))}
         </div>
       </div>
 

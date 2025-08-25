@@ -151,7 +151,7 @@ const UploadResume = () => {
                   <div>
                     <h3 className="font-bold text-foreground mb-2">Resume Processed Successfully!</h3>
                     <p className="text-muted-foreground mb-4">
-                      We're analyzing your resume and finding the best job matches for you.
+                      We&apos;re analyzing your resume and finding the best job matches for you.
                     </p>
                     <div className="flex flex-wrap gap-2 justify-center">
                       <Badge variant="secondary" className="rounded-full">

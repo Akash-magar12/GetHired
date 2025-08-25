@@ -23,7 +23,7 @@ const ExploreCareers = () => {
                 <CardContent className="p-4 sm:p-5 md:p-6">
                   <div className="flex items-center gap-3 sm:gap-4">
                     <div
-                      className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full ${category.color} flex items-center justify-center flex-shrink-0`}
+                      className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black flex items-center justify-center flex-shrink-0`}
                     >
                       <IconComponent className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                     </div>

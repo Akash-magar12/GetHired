@@ -40,10 +40,10 @@ const Navbar = () => {
 
         {/* Desktop Buttons */}
         <div className="hidden lg:flex items-center space-x-3">
-          <Button variant="ghost" size="sm" className="font-medium">
+          <Button variant="ghost" size="sm" className="font-medium cursor-pointer">
             Login
           </Button>
-          <Button size="sm" className="font-medium">
+          <Button size="sm" className="font-medium cursor-pointer">
             Sign Up
           </Button>
         </div>
@@ -84,7 +84,7 @@ const Navbar = () => {
               </div>
               <div className="mt-8 flex flex-col p-4 gap-3">
                 <SheetClose asChild>
-                  <Button variant="ghost" className="w-full">
+                  <Button variant="ghost" className="w-full ">
                     Login
                   </Button>
                 </SheetClose>

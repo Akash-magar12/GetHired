@@ -6,27 +6,27 @@ const AvatarGroup = () => {
       <div className="flex flex-row flex-wrap items-center justify-center gap-8 sm:gap-12">
         <div className="*:data-[slot=avatar]:ring-background flex -space-x-1.5 sm:-space-x-2 *:data-[slot=avatar]:ring-1 sm:*:data-[slot=avatar]:ring-2 *:data-[slot=avatar]">
           <Avatar className="w-8 h-8 sm:w-10 sm:h-10">
-            <AvatarImage src="/avatar1.png" alt="@shadcn" />
+            <AvatarImage src="/avatar1.webp" alt="@shadcn" />
             <AvatarFallback className="text-xs sm:text-sm">CN</AvatarFallback>
           </Avatar>
           <Avatar className="w-8 h-8 sm:w-10 sm:h-10">
-            <AvatarImage src="/avatar3.png" alt="@leerob" />
+            <AvatarImage src="/avatar3.webp" alt="@leerob" />
             <AvatarFallback className="text-xs sm:text-sm">LR</AvatarFallback>
           </Avatar>
           <Avatar className="w-8 h-8 sm:w-10 sm:h-10">
-            <AvatarImage src="/avatar2.png" />
+            <AvatarImage src="/avatar2.webp" />
             <AvatarFallback className="text-xs sm:text-sm">ER</AvatarFallback>
           </Avatar>
           <Avatar className="w-8 h-8 sm:w-10 sm:h-10">
-            <AvatarImage src="/avatar4.png" alt="@shadcn" />
+            <AvatarImage src="/avatar4.webp" alt="@shadcn" />
             <AvatarFallback className="text-xs sm:text-sm">CN</AvatarFallback>
           </Avatar>
           <Avatar className="w-8 h-8 sm:w-10 sm:h-10">
-            <AvatarImage src="/avatar5.png" alt="@leerob" />
+            <AvatarImage src="/avatar5.webp" alt="@leerob" />
             <AvatarFallback className="text-xs sm:text-sm">LR</AvatarFallback>
           </Avatar>
           <Avatar className="w-8 h-8 sm:w-10 sm:h-10">
-            <AvatarImage src="/avatar6.png" alt="@evilrabbit" />
+            <AvatarImage src="/avatar6.webp" alt="@evilrabbit" />
             <AvatarFallback className="text-xs sm:text-sm">ER</AvatarFallback>
           </Avatar>
         </div>

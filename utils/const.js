@@ -98,61 +98,51 @@ export const jobCategories = [
     title: "Marketing & Communication",
     jobs: 68,
     icon: Megaphone,
-    color: "bg-blue-500",
   },
   {
     title: "Design & Development",
     jobs: 98,
     icon: Palette,
-    color: "bg-orange-500",
   },
   {
     title: "Human Research & Development",
     jobs: 51,
     icon: Users,
-    color: "bg-purple-500",
   },
   {
     title: "Finance Management",
     jobs: 45,
     icon: DollarSign,
-    color: "bg-green-500",
   },
   {
     title: "Healthcare & Medical",
     jobs: 43,
     icon: Heart,
-    color: "bg-emerald-500",
   },
   {
     title: "Armforce Guide & Security",
     jobs: 44,
     icon: Shield,
-    color: "bg-blue-600",
   },
   {
     title: "Business & Consulting",
     jobs: 29,
     icon: Briefcase,
-    color: "bg-pink-500",
   },
   {
     title: "Education & Training",
     jobs: 58,
     icon: GraduationCap,
-    color: "bg-violet-500",
   },
   {
     title: "Customer Support Care",
     jobs: 65,
     icon: Headphones,
-    color: "bg-indigo-500",
   },
   {
     title: "Project Management",
     jobs: 53,
     icon: FolderOpen,
-    color: "bg-amber-500",
   },
 ];
 
@@ -283,8 +273,50 @@ export const alljobs = [
     types: ["Full Time"],
     contractType: "Permanent",
     salary: "₹15-22 LPA",
-    description: "Work on AI/ML healthcare models. Experience in Python, TensorFlow, and NLP is a must.",
+    description:
+      "Work on AI/ML healthcare models. Experience in Python, TensorFlow, and NLP is a must.",
     postedAgo: "2 days ago",
   },
-]
-
+];
+export const testimonials = [
+  {
+    id: "1",
+    name: "Esther Howard",
+    role: "Marketing Coordinator",
+    quote:
+      "I used to struggle with job platforms, but GetHired makes it feel easy and personal. It actually understands what I'm looking for.",
+    avatar: "/avatar1.webp",
+  },
+  {
+    id: "2",
+    name: "Aarav Sharma",
+    role: "Frontend Developer",
+    quote:
+      "GetHired matched me with roles that fit my tech stack perfectly. The recommendations felt tailored, not generic.",
+    avatar: "/avatar2.webp",
+  },
+  {
+    id: "3",
+    name: "Priya Verma",
+    role: "UI/UX Designer",
+    quote:
+      "The platform’s UX is simple and the matches are on point. I landed interviews within a week.",
+    avatar: "/avatar3.webp",
+  },
+  {
+    id: "4",
+    name: "Rohan Mehta",
+    role: "Backend Developer",
+    quote:
+      "Finally a job portal that understands skills, not just keywords. Huge time-saver.",
+    avatar: "/avatar4.webp",
+  },
+  {
+    id: "5",
+    name: "Sneha Kapoor",
+    role: "Full Stack Developer",
+    quote:
+      "GetHired’s recommendations were so relevant that I only applied to 3 roles — and got 2 offers.",
+    avatar: "/avatar5.webp",
+  },
+];

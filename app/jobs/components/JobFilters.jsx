@@ -7,7 +7,7 @@ import { Separator } from "@/components/ui/separator";
 
 const JobFilters = () => {
   return (
-    <Card className="sticky top-6">
+    <Card className="sticky top-6 rounded-sm">
       <CardHeader className="pb-4">
         <div className="flex items-center justify-between">
           <CardTitle className="text-lg">Filters</CardTitle>
