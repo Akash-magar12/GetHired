@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
 
@@ -27,13 +28,15 @@ const ContactSection = () => {
           </p>
 
           {/* Button */}
-          <Button
-            size="lg"
-            variant="outline"
-            className="text-black bg-white cursor-pointer mt-2 md:mt-0 px-6 md:px-8 py-2 md:py-3 text-sm md:text-base"
-          >
-            Contact Us
-          </Button>
+          <Link href="/contact">
+            <Button
+              size="lg"
+              variant="outline"
+              className="text-black bg-white cursor-pointer mt-2 md:mt-0 px-6 md:px-8 py-2 md:py-3 text-sm md:text-base"
+            >
+              Contact Us
+            </Button>
+          </Link>
         </CardContent>
       </Card>
     </section>

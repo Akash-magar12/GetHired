@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { navLinks } from "@/utils/const";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -12,6 +12,13 @@ import {
   SheetHeader,
   SheetTitle,
 } from "@/components/ui/sheet";
+import {
+  SignInButton,
+  SignUpButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from "@clerk/nextjs";
 
 const Navbar = () => {
   return (
@@ -38,22 +45,44 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Desktop Buttons */}
+        {/* Desktop Auth Buttons */}
         <div className="hidden lg:flex items-center space-x-3">
-          <Button variant="ghost" size="sm" className="font-medium cursor-pointer">
-            Login
-          </Button>
-          <Button size="sm" className="font-medium cursor-pointer">
-            Sign Up
-          </Button>
+          <SignedOut>
+            <SignInButton mode="modal">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="font-medium cursor-pointer"
+              >
+                Login
+              </Button>
+            </SignInButton>
+            <SignUpButton mode="modal">
+              <Button size="sm" className="font-medium cursor-pointer">
+                Sign Up
+              </Button>
+            </SignUpButton>
+          </SignedOut>
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
         </div>
 
         {/* Tablet Buttons (md to lg) */}
         <div className="hidden md:flex lg:hidden items-center space-x-2">
-          <Button variant="ghost" size="sm">
-            Login
-          </Button>
-          <Button size="sm">Sign Up</Button>
+          <SignedOut>
+            <SignInButton mode="modal">
+              <Button variant="ghost" size="sm">
+                Login
+              </Button>
+            </SignInButton>
+            <SignUpButton mode="modal">
+              <Button size="sm">Sign Up</Button>
+            </SignUpButton>
+          </SignedOut>
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
         </div>
 
         {/* Mobile Menu (Sheet) */}
@@ -67,7 +96,7 @@ const Navbar = () => {
             <SheetContent side="left" className="w-[280px] sm:w-[320px]">
               <SheetHeader>
                 <SheetTitle className="font-black text-lg">
-                  NextStep..
+                  GetHired.
                 </SheetTitle>
               </SheetHeader>
               <div className="mt-6 flex flex-col p-4 gap-4">
@@ -82,15 +111,22 @@ const Navbar = () => {
                   </SheetClose>
                 ))}
               </div>
+
+              {/* Mobile Auth Buttons */}
               <div className="mt-8 flex flex-col p-4 gap-3">
-                <SheetClose asChild>
-                  <Button variant="ghost" className="w-full ">
-                    Login
-                  </Button>
-                </SheetClose>
-                <SheetClose asChild>
-                  <Button className="w-full">Sign Up</Button>
-                </SheetClose>
+                <SignedOut>
+                  <SignInButton mode="modal">
+                    <Button variant="ghost" className="w-full">
+                      Login
+                    </Button>
+                  </SignInButton>
+                  <SignUpButton mode="modal">
+                    <Button className="w-full">Sign Up</Button>
+                  </SignUpButton>
+                </SignedOut>
+                <SignedIn>
+                  <UserButton />
+                </SignedIn>
               </div>
             </SheetContent>
           </Sheet>
