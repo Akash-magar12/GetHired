@@ -5,7 +5,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
-const JobFilters = () => {
+const JobFilters = ({ updateFilter }) => {
   return (
     <Card className="sticky top-6 rounded-sm">
       <CardHeader className="pb-4">

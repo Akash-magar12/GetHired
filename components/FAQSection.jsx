@@ -22,7 +22,7 @@ const FAQSection = () => {
             className="border border-gray-200 rounded-xl px-4 sm:px-6 md:px-8"
           >
             <AccordionTrigger className="text-left text-sm sm:text-base md:text-lg  font-medium py-4 sm:py-5 md:py-6 hover:no-underline [&[data-state=open]>svg]:rotate-180 transition-all">
-              How do I apply for a job on JobNest?
+              How do I apply for a job on GetHired?
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-3 sm:gap-4 md:gap-5 text-balance pb-4 sm:pb-5 md:pb-6">
               <p className="text-sm sm:text-base  text-gray-700 leading-relaxed">
@@ -43,11 +43,11 @@ const FAQSection = () => {
             className="border border-gray-200 rounded-xl px-4 sm:px-6 md:px-8"
           >
             <AccordionTrigger className="text-left text-sm sm:text-base md:text-lg  font-medium py-4 sm:py-5 md:py-6 hover:no-underline [&[data-state=open]>svg]:rotate-180 transition-all">
-              What is NextStep?
+              What is GetHired?
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-3 sm:gap-4 md:gap-5 text-balance pb-4 sm:pb-5 md:pb-6">
               <p className="text-sm sm:text-base  text-gray-700 leading-relaxed">
-                NextStep is our personalized career guidance feature. It
+                GetHired is our personalized career guidance feature. It
                 recommends jobs based on your skills, helps you improve your
                 profile, and guides you towards opportunities that best match
                 your potential.

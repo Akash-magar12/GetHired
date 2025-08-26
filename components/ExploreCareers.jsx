@@ -3,6 +3,7 @@ import SectionHeader from "./SectionHeader";
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
 import { jobCategories } from "@/utils/const";
+import Link from "next/link";
 
 const ExploreCareers = () => {
   return (
@@ -43,12 +44,14 @@ const ExploreCareers = () => {
         </div>
 
         <div className="text-center my-8 sm:my-12 md:my-14 lg:my-16">
-          <Button
-            size="lg"
-            className="bg-primary cursor-pointer hover:bg-primary/90 text-primary-foreground px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium text-sm sm:text-base transition-all duration-300 hover:shadow-lg w-full sm:w-auto"
-          >
-            Explore All
-          </Button>
+          <Link href="/jobs">
+            <Button
+              size="lg"
+              className="bg-primary cursor-pointer hover:bg-primary/90 text-primary-foreground px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-medium text-sm sm:text-base transition-all duration-300 hover:shadow-lg w-full sm:w-auto"
+            >
+              Explore All
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
