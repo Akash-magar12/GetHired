@@ -13,7 +13,7 @@ import {
 
 export const navLinks = [
   { name: "Home", href: "/" },
-  { name: "Find Jobs", href: "/jobs" },
+  // { name: "Find Jobs", href: "/jobs" },
   // { name: "Companies", href: "/companies" },
   { name: "Upload Resume", href: "/upload-resume" }, // ✨ key feature
   { name: "About Us", href: "/about" },
